@@ -1,0 +1,21 @@
+.skills {
+    padding: 90px 0;
+}
+
+.skills__row {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: space-between;
+
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+@include mediaPhone {
+    .skills__row {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+}

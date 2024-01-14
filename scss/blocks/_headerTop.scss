@@ -1,0 +1,60 @@
+.header__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__top__logo {
+    position: relative;
+    color: $colorBlack;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    padding-right: 12px;
+    padding-bottom: 3px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: orange;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+
+    }
+}
+
+.header__top__nav {
+    
+}
+
+.header__top__nav__list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header__top__nav__list__elem {
+    color: $colorBlack;
+    font-size: 14px;
+    font-weight: 500;
+
+    &.active {
+        color: $colorGray;
+    }
+}
+
+.header__top__burger {
+    display: none;
+}
+
+@include mediaPhone {
+    .header__top__nav {
+        display: none;
+    }
+
+    .header__top__burger {
+        display: block;
+    }
+}

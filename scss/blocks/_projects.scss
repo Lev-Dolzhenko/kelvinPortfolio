@@ -1,0 +1,30 @@
+.projects {
+    padding: 90px 0;
+    background-color: $colorSecondaryGray;
+}
+
+.projects__row__elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    &+& {
+        margin-top: 90px;
+    }
+}
+
+.projects__row__elem__name {
+    color: $colorSecondaryBlack;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+@include mediaPhone {
+    .projects {
+        padding: 60px 0;
+    }
+
+    
+}
