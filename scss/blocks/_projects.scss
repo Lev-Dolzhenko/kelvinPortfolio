@@ -16,7 +16,7 @@
 
 .projects__row__elem__name {
     color: $colorSecondaryBlack;
-    font-size: 18px;
+    font-size: clamp(0.938rem, 0.872rem + 0.33vw, 1.125rem);
     font-weight: 400;
     text-decoration-line: underline;
 }

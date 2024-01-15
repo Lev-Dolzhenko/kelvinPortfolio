@@ -75,6 +75,7 @@ a {
         color: #828282;
         font-weight: 400;
         text-align: center;
+        font-size: clamp(0.813rem, 0.791rem + 0.11vw, 0.875rem);
     }
 }
 
